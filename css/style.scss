@@ -50,13 +50,13 @@ body {
       align-items: center;
       justify-content: center;
       margin-inline-start: 32px;
-      &:focus{
-          background-color: transparent;
-          box-shadow: none;
-          outline: none;
+      &:focus {
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
       }
-      &::after{
-          display: none;
+      &::after {
+        display: none;
       }
     }
   }
@@ -80,11 +80,35 @@ body {
       text-decoration: none;
     }
   }
+  #navbarSupportedContent {
+    @media (max-width: 991px) {
+      text-align: center;
+      ul {
+        padding-right: 0;
+        .nav-link{
+          margin-inline-end: 0;
+        }
+      }
+      .dropdown {
+        button {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 0px 12px 0;
+      }
+    }
+  }
 }
 
 /*slider  */
 
 .slider {
+  background-color: #edf7d1;
   #carouselExampleIndicators,
   #secondSlider {
     height: 450px;
@@ -117,12 +141,13 @@ body {
           .carousel-caption {
             width: 90%;
             @media (max-width: 575px) {
-              h2,
+              h2,h3,
               small {
-                font-size: 28px;
+                font-size: 24px;
               }
               p {
-                width: 80%;
+                width: 100%;
+                font-size: 15px;
               }
               h6,
               span {
@@ -147,14 +172,14 @@ body {
       position: absolute;
       right: auto;
       bottom: 20px;
-      left: 15%;
+      left: 0%;
       z-index: 10;
       padding-top: 20px;
       padding-bottom: 20px;
       color: #fff;
       text-align: center;
       background-color: transparent;
-      width: 40%;
+      width: 60%;
       top: 50%;
       bottom: auto;
       transform: translateY(-50%);
@@ -183,12 +208,14 @@ body {
         color: $darkColor;
       }
       .order-now {
+        display: flex;
+        justify-content: flex-end;
         a {
           display: block;
           width: 200px;
           background-color: $darkGreen;
           position: relative;
-          padding: 8px;
+          padding: 4px;
           color: $lightGreen;
           text-decoration: none;
           font-size: 18px;
@@ -206,6 +233,9 @@ body {
       }
     }
   }
+}
+.slider #carouselExampleIndicators {
+  height: 350px;
 }
 /* contact info */
 
@@ -262,13 +292,13 @@ body {
               font-family: frutiger;
               font-weight: 600;
               color: $darkGreen;
-              font-size: 19px;
+              font-size: 17px;
               margin: 0;
             }
             span {
               font-family: frutiger;
               color: $lightGreen;
-              font-size: 22px;
+              font-size: 20px;
             }
           }
         }
@@ -316,7 +346,7 @@ body {
 }
 .no-img {
   .label {
-    right: 0;
+    right: 5px;
     @media (max-width: 450px) {
       top: 0;
     }
@@ -326,6 +356,9 @@ body {
 
 .weight-loss-2 {
   direction: rtl;
+  .desc{
+    flex-direction: row-reverse;
+  }
   .weight-content {
     background-color: $darkGreen;
     h2,
@@ -391,8 +424,11 @@ body {
 /*secondSlider */
 
 #secondSlider {
+  img {
+    margin-left: -70px;
+  }
   .carousel-caption {
-    right: 5% !important;
+    right: 0% !important;
     left: auto !important;
     .justify-content-between {
       margin-bottom: 32px;
@@ -417,13 +453,15 @@ body {
 
 footer {
   background-color: $darkGreen;
-  padding: 50px 0;
+  padding: 24px 0;
   h4 {
     font-weight: bold;
     color: $lightGreen;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    font-size: 18px;
   }
   ul {
+    padding-right: 0;
     li {
       display: flex;
       align-items: center;
@@ -440,6 +478,34 @@ footer {
       }
     }
   }
+  ul.more-links {
+    li {
+      justify-content: flex-end;
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s;
+        &::after {
+          position: absolute;
+          bottom: -2px;
+          right: 0;
+          content: "";
+          display: block;
+          width: 0%;
+          height: 3px;
+          background-color: $lightGreen;
+          transition: 0.3s;
+        }
+        &:hover {
+          color: $lightGreen;
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   p {
     color: $lightGreen;
   }
@@ -448,10 +514,12 @@ footer {
       position: relative;
       height: 35px;
       display: flex;
+      justify-content: center;
       input {
         height: 100%;
         border: none;
         text-align: center;
+        outline: none;
         &::placeholder {
           color: $lightGreen;
           font-size: 14px;
