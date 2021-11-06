@@ -220,6 +220,7 @@ body {
           text-decoration: none;
           font-size: 18px;
           font-weight: normal;
+          transition: .3s;
           svg {
             position: absolute;
             right: 0;
@@ -228,6 +229,13 @@ body {
             height: 100%;
             background-color: $darkColor;
             padding: 4px;
+            border-left: 1px solid transparent;
+          }
+          &:hover{
+            background-color: $darkColor;
+            svg{
+              border-left: 1px solid $lightGreen;
+            }
           }
         }
       }

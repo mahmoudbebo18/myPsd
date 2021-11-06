@@ -184,7 +184,8 @@ body {
           color: #c2e76b;
           text-decoration: none;
           font-size: 18px;
-          font-weight: normal; }
+          font-weight: normal;
+          transition: .3s; }
           .slider #carouselExampleIndicators .carousel-caption .order-now a svg,
           .slider #secondSlider .carousel-caption .order-now a svg {
             position: absolute;
@@ -193,7 +194,14 @@ body {
             width: 40px;
             height: 100%;
             background-color: #3c3935;
-            padding: 4px; }
+            padding: 4px;
+            border-left: 1px solid transparent; }
+          .slider #carouselExampleIndicators .carousel-caption .order-now a:hover,
+          .slider #secondSlider .carousel-caption .order-now a:hover {
+            background-color: #3c3935; }
+            .slider #carouselExampleIndicators .carousel-caption .order-now a:hover svg,
+            .slider #secondSlider .carousel-caption .order-now a:hover svg {
+              border-left: 1px solid #c2e76b; }
 
 .slider #carouselExampleIndicators {
   height: 350px; }
