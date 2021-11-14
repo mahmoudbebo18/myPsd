@@ -85,7 +85,7 @@ body {
       text-align: center;
       ul {
         padding-right: 0;
-        .nav-link{
+        .nav-link {
           margin-inline-end: 0;
         }
       }
@@ -141,7 +141,8 @@ body {
           .carousel-caption {
             width: 90%;
             @media (max-width: 575px) {
-              h2,h3,
+              h2,
+              h3,
               small {
                 font-size: 24px;
               }
@@ -220,7 +221,7 @@ body {
           text-decoration: none;
           font-size: 18px;
           font-weight: normal;
-          transition: .3s;
+          transition: 0.3s;
           svg {
             position: absolute;
             right: 0;
@@ -231,9 +232,9 @@ body {
             padding: 4px;
             border-left: 1px solid transparent;
           }
-          &:hover{
+          &:hover {
             background-color: $darkColor;
-            svg{
+            svg {
               border-left: 1px solid $lightGreen;
             }
           }
@@ -364,7 +365,7 @@ body {
 
 .weight-loss-2 {
   direction: rtl;
-  .desc{
+  .desc {
     flex-direction: row-reverse;
   }
   .weight-content {
@@ -432,8 +433,12 @@ body {
 /*secondSlider */
 
 #secondSlider {
+  height: 388px !important;
   img {
-    margin-left: -70px;
+    height: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: 35% !important;
   }
   .carousel-caption {
     right: 0% !important;

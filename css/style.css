@@ -104,7 +104,8 @@ body {
           .slider #secondSlider .carousel-inner .carousel-item .carousel-caption {
             width: 90%; } }
   @media (max-width: 991px) and (max-width: 575px) {
-    .slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h2, .slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h3,
+    .slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h2,
+    .slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h3,
     .slider #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption small,
     .slider #secondSlider .carousel-inner .carousel-item .carousel-caption h2,
     .slider #secondSlider .carousel-inner .carousel-item .carousel-caption h3,
@@ -185,7 +186,7 @@ body {
           text-decoration: none;
           font-size: 18px;
           font-weight: normal;
-          transition: .3s; }
+          transition: 0.3s; }
           .slider #carouselExampleIndicators .carousel-caption .order-now a svg,
           .slider #secondSlider .carousel-caption .order-now a svg {
             position: absolute;
@@ -351,23 +352,28 @@ body {
       font-size: 24px; } }
 
 /*secondSlider */
-#secondSlider img {
-  margin-left: -70px; }
-#secondSlider .carousel-caption {
-  right: 0% !important;
-  left: auto !important; }
-  #secondSlider .carousel-caption .justify-content-between {
-    margin-bottom: 32px; }
-    #secondSlider .carousel-caption .justify-content-between h6 {
-      font-weight: bold;
-      font-size: 18px;
-      color: #71a84f; }
-    #secondSlider .carousel-caption .justify-content-between span {
-      font-weight: bold;
-      font-size: 18px;
-      color: #71a84f; }
-  #secondSlider .carousel-caption p {
-    width: 65%; }
+#secondSlider {
+  height: 388px !important; }
+  #secondSlider img {
+    height: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: 35% !important; }
+  #secondSlider .carousel-caption {
+    right: 0% !important;
+    left: auto !important; }
+    #secondSlider .carousel-caption .justify-content-between {
+      margin-bottom: 32px; }
+      #secondSlider .carousel-caption .justify-content-between h6 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #71a84f; }
+      #secondSlider .carousel-caption .justify-content-between span {
+        font-weight: bold;
+        font-size: 18px;
+        color: #71a84f; }
+    #secondSlider .carousel-caption p {
+      width: 65%; }
 
 /*footer */
 footer {

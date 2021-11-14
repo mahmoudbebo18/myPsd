@@ -428,13 +428,16 @@ body {
 /*secondSlider */
 
 #secondSlider {
+  height: 388px !important;
   img {
-    margin-right: 70px;
-    transform: scale(1) !important;
+    height: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: 35% !important;
   }
   .carousel-caption {
-    right: 0% !important;
-    left: auto !important;
+    right:auto !important;
+    left: 0 !important;
     .justify-content-between {
       margin-bottom: 32px;
       h6 {
