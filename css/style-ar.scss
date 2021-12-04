@@ -57,7 +57,7 @@ body {
         font-weight: 300;
         color: $navLinksColor;
         font-size: 18px;
-        margin-inline-end: 36px;
+        margin-inline-end: 24px;
       }
     }
   }
@@ -552,6 +552,212 @@ footer {
       a {
         color: $lightGreen;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/*our story */
+
+.our-story {
+  background-image: url(../imgs/about-bg.png);
+  height: 400px;
+  background-size: cover;
+  background-position: right center;
+  position: relative;
+  &::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background-color: rgba(255,255,255,.7);
+    display: none;
+    @media(max-width:767px){
+      display: block;
+    }
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    z-index: 5555;
+    @media(max-width:767px){
+      justify-content: flex-start;
+    }
+    h1 {
+      font-size: 46px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .bread {
+      a {
+        font-weight: bold;
+        color: $darkGreen;
+        font-size: 18px;
+      }
+      .separator {
+        color: $darkGreen;
+        margin: 0 5px;
+      }
+      span {
+        color: $darkGreen;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.story-content {
+  padding: 50px 0 26px;
+  p {
+    font-size: 18px;
+    color: $navLinksColor;
+    margin-bottom: 24px;
+    @media(max-width:575px){
+      font-size:16px
+    }
+  }
+}
+
+.testi {
+  background-image: url(../imgs/testi-bg.png);
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  .container {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 46px;
+      font-weight: bold;
+      color: $darkGreen;
+      margin-bottom: 32px;
+      @media(max-width:575px){
+        font-size:32px
+      }
+      span {
+        color: $navLinksColor;
+      }
+    }
+    .carousel-item {
+      h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $darkGreen;
+        margin-bottom: 24px;
+        @media(max-width:575px){
+          font-size:20px
+        }
+        @media(max-width:375px){
+          font-size:16px
+        }
+      }
+      p {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 24px;
+        @media(max-width:767px){
+          width: 100%;
+        }
+      }
+      span{
+        font-weight: bold;
+        font-size:18px;
+        color:$darkGreen
+      }
+    }
+  }
+  .carousel-indicators{
+    bottom: -50px;
+    li{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $lightGreen;
+    }
+    li.active{
+      background-color: $darkGreen;
+    }
+  }
+}
+
+
+
+/*contact-us*/
+.contact-us {
+  background-image: url(../imgs/contact.png);
+}
+
+.contact-form {
+  padding: 50px 0;
+  h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: $navLinksColor;
+    margin-bottom: 32px;
+    @media (max-width: 575px) {
+      font-size: 32px;
+    }
+  }
+  .form-part{
+    border-left: 3px solid #cfcecd;
+    @media(max-width:991px){
+      border: none;
+      margin-bottom: 24px;
+    }
+  }
+  form {
+    text-align: end;
+    padding-inline-end: 15px;
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      border: 3px solid $darkGreen;
+      margin-bottom: 16px;
+      padding: 8px 8px 8px 16px;
+      outline: none;
+      &::placeholder {
+        color: $lightGreen;
+        font-weight: bold;
+        font-size:18px
+      }
+    }
+    button {
+      background-color: $navLinksColor;
+      color: $lightGreen;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .welcome{
+    margin-bottom: 24px;
+    padding-inline-start: 15px;
+    h4{
+      font-weight: bold;
+      color:$navLinksColor;
+      font-size:28px;
+      margin: 0;
+      @media(max-width:425px){
+        font-size:20px;
+      }
+    }
+    p{
+      font-weight: bold;
+      font-size:24px;
+      color:$darkGreen;
+      @media(max-width:425px){
+        font-size:16px;
       }
     }
   }
