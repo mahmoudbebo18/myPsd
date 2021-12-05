@@ -614,4 +614,81 @@ footer {
         .contact-form .welcome p {
           font-size: 16px; } }
 
+/*profile*/
+.profile {
+  background-image: url(../imgs/profile.png); }
+  @media (max-width: 767px) {
+    .profile {
+      background-size: 950px; } }
+  .profile::after {
+    display: none !important; }
+  @media (max-width: 425px) {
+    .profile .content h1 {
+      font-size: 36px; } }
+
+.lower-menu {
+  background-color: #f2f2f2;
+  padding: 16px 0; }
+  @media (max-width: 767px) {
+    .lower-menu .menu-holder {
+      flex-wrap: wrap; } }
+  .lower-menu .menu-holder div {
+    margin-inline-end: 32px; }
+    @media (max-width: 767px) {
+      .lower-menu .menu-holder div {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-inline-end: 0; } }
+    .lower-menu .menu-holder div img {
+      margin-inline-end: 8px; }
+    .lower-menu .menu-holder div a {
+      color: #71a84f;
+      font-weight: bold;
+      font-size: 24px; }
+
+.subscription-history {
+  padding: 50px 0; }
+  .subscription-history .reminder {
+    border: 3px solid #f00;
+    color: #f00;
+    padding: 12px;
+    font-size: 20px; }
+    .subscription-history .reminder a {
+      font-weight: bold;
+      font-size-adjust: 24px;
+      color: #f00; }
+  .subscription-history .meals-history {
+    padding-top: 36px; }
+    .subscription-history .meals-history .date {
+      color: #71a84f;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 45px; }
+    .subscription-history .meals-history .holder {
+      margin-bottom: 24px; }
+      .subscription-history .meals-history .holder img {
+        margin-inline-end: 12px;
+        border-radius: 50%; }
+      .subscription-history .meals-history .holder .caption .name {
+        align-items: center;
+        justify-content: space-between; }
+        .subscription-history .meals-history .holder .caption .name h5 {
+          font-weight: bold;
+          color: #3d3935;
+          margin: 0;
+          width: 80%;
+          position: relative; }
+          .subscription-history .meals-history .holder .caption .name h5::after {
+            position: absolute;
+            right: 0;
+            top: 13px;
+            width: 40%;
+            border-top: 3px dotted #d6d6d6;
+            display: block;
+            content: ""; }
+        .subscription-history .meals-history .holder .caption .name span {
+          color: #71a84f;
+          font-weight: bold;
+          font-size: 14px; }
+
 /*# sourceMappingURL=style.css.map */

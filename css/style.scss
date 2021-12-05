@@ -705,9 +705,9 @@ footer {
       font-size: 32px;
     }
   }
-  .form-part{
+  .form-part {
     border-right: 3px solid #cfcecd;
-    @media(max-width:991px){
+    @media (max-width: 991px) {
       border: none;
       margin-bottom: 24px;
     }
@@ -726,7 +726,7 @@ footer {
       &::placeholder {
         color: $lightGreen;
         font-weight: bold;
-        font-size:18px
+        font-size: 18px;
       }
     }
     button {
@@ -738,24 +738,125 @@ footer {
       font-size: 20px;
     }
   }
-  .welcome{
+  .welcome {
     margin-bottom: 24px;
     padding-inline-start: 15px;
-    h4{
+    h4 {
       font-weight: bold;
-      color:$navLinksColor;
-      font-size:28px;
+      color: $navLinksColor;
+      font-size: 28px;
       margin: 0;
-      @media(max-width:425px){
-        font-size:20px;
+      @media (max-width: 425px) {
+        font-size: 20px;
       }
     }
-    p{
+    p {
       font-weight: bold;
-      font-size:24px;
-      color:$darkGreen;
-      @media(max-width:425px){
-        font-size:16px;
+      font-size: 24px;
+      color: $darkGreen;
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*profile*/
+.profile {
+  background-image: url(../imgs/profile.png);
+  @media(max-width:767px){
+    background-size: 950px;
+  }
+  &::after{
+    display: none !important;
+
+  }
+  .content h1{
+    @media(max-width:425px){
+      font-size: 36px;
+    }
+  }
+}
+
+.lower-menu {
+  background-color: #f2f2f2;
+  padding: 16px 0;
+  .menu-holder {
+    @media(max-width:767px){
+      flex-wrap: wrap;
+    }
+    div {
+      margin-inline-end: 32px;
+      @media(max-width:767px){
+        width: 100%;
+        margin-bottom: 16px;
+        margin-inline-end: 0;
+      }
+      img {
+        margin-inline-end: 8px;
+      }
+      a {
+        color: $darkGreen;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.subscription-history {
+  padding: 50px 0;
+  .reminder {
+    border: 3px solid #f00;
+    color: #f00;
+    padding: 12px;
+    font-size: 20px;
+    a {
+      font-weight: bold;
+      font-size-adjust: 24px;
+      color: #f00;
+    }
+  }
+  .meals-history {
+    padding-top: 36px;
+    .date{
+      color: $darkGreen;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 45px;
+    }
+    .holder {
+      margin-bottom: 24px;
+      img {
+        margin-inline-end: 12px;
+        border-radius: 50%;
+      }
+      .caption {
+        .name {
+          align-items: center;
+          justify-content: space-between;
+          h5 {
+            font-weight: bold;
+            color: $navLinksColor;
+            margin: 0;
+            width: 80%;
+            position: relative;
+            &::after {
+              position: absolute;
+              right: 0;
+              top: 13px;
+              width: 40%;
+              border-top: 3px dotted #d6d6d6;
+              display: block;
+              content: "";
+            }
+          }
+          span {
+            color: $darkGreen;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
