@@ -766,12 +766,10 @@ footer {
 
 
 
-/*profile*/
 .profile {
   background-image: url(../imgs/profile.png);
-  @media(max-width:767px){
-    background-size: 950px;
-  }
+  background-size: 1600px;
+
   &::after{
     display: none !important;
 
@@ -782,6 +780,7 @@ footer {
     }
   }
 }
+
 
 .lower-menu {
   background-color: #f2f2f2;

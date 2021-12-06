@@ -612,12 +612,9 @@ footer {
         .contact-form .welcome p {
           font-size: 16px; } }
 
-/*profile*/
 .profile {
-  background-image: url(../imgs/profile.png); }
-  @media (max-width: 767px) {
-    .profile {
-      background-size: 950px; } }
+  background-image: url(../imgs/profile.png);
+  background-size: 1600px; }
   .profile::after {
     display: none !important; }
   @media (max-width: 425px) {
